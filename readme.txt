@@ -9,13 +9,13 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Insert CopySafe PDF documents into WordPress pages and posts using shortcodes.
+Display copy protected PDF documents in WordPress pages and posts.
 
 == Description ==
 
-This plugin enables inserting CopySafe PDF documents into WordPress posts and pages with shortcode. The resulting embedded PDF object is supported in all popular web browsers across Windows since XP (92% of net users). 
+This plugin enables the use of copy protected PDF documents in WordPress posts and pages with shortcode. The resulting embedded PDF object is supported in all popular web browsers across Windows since XP (92% of net users). 
 
-CopySafe PDF provides the most secure protection for PDF both online and offline. This plugin displays PDF created for use online and when domain lock is applied, the PDF file cannot be displayed from anywhere else. With PDF now bound to your web site, you free to apply DRM rules to control access to the page via your member controls. The CopySafe PDF plugin reports the user’s unique computer signature so that you can convert WordPress into a fully fledged DRM Portal by adding a new field to your member’s table and some script to compare current ID with the one already assigned.
+CopySafe PDF provides the most secure protection for PDF both online and offline. This plugin displays PDF created for use online and when domain lock is applied, the PDF file cannot be displayed from anywhere else. With PDF now bound to your web site, you free to apply DRM rules to control access to the page via your member controls. The CopySafe PDF plugin reports the user's unique computer signature so that you can convert WordPress into a fully fledged DRM Portal by adding a new field to your member's table and some script to compare current ID with the one already assigned.
 
 * Easy install.
 * Insert protected PDF into posts and pages using the [PDF] media button.
