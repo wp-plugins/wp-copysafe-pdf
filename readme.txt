@@ -64,6 +64,9 @@ You can upload new PDF class documents or select from a list of already uploaded
 
 == Changelog ==
 
+= 0.2 =
+* Added allowance for Firefox 20 and later
+
 = 0.1 =
 * First release.
 

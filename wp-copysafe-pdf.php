@@ -4,7 +4,7 @@
   Plugin URI: http://www.artistscope.com/copysafe_pdf_protection_wordpress_plugin.asp
   Description: This Wordpress plugin enables sites using CopySafe PDF to easily add protected PDF for display in all popular web browsers.
   Author: ArtistScope
-  Version: 0.1
+  Version: 0.2
   Author URI: http://www.artistscope.com/
 
   Copyright 2013 ArtistScope Pty Limited
