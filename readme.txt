@@ -27,7 +27,7 @@ CopySafe PDF provides the most secure protection for PDF both online and offline
 * Safe from Print Screen and all screen capture software.
 * PDF documents cannot be saved and displayed any from your website.
 
-For more information visit the [CopySafe PDF]( http://www.artistscope.com/copysafe_pdf_protection_wordpress_plugin.asp) website.
+For more information visit the [CopySafe PDF](http://www.artistscope.com/copysafe_pdf_protection_wordpress_plugin.asp) website.
 
 
 == Installation ==
@@ -40,6 +40,8 @@ This section describes how to install the plugin and get it working.
 4. Set write permissions on this new folder
 5. Check and modify the default settings to suit your pages
 6. You can now add CopySafe PDF documents using its media button above the post editor
+
+Click to download the [CopySafe PDF Install Guide](http://www.artistscope.com/docs/CopySafePDF_WordPress_Installation.pdf)
  
 If you do not have any CopySafe PDF encrypted documents for testing, you can create your own by downloading the demo version of [CopySafe PDF Protector]( http://www.artistscope.com/copysafe_pdf_protection_download.asp) software or by downloading use this [test bundle](http://www.artistscope.com/download/CopysafePDF_testfiles.zip) which includes several sample documents. The samples are not domain locked so they can be displayed on any site.
 
@@ -99,7 +101,7 @@ CopySafe PDF is a sophisticated application specially designed for a wide variet
 * DRM Portal software is available for installation on your Windows server.
 * Free DRM Hosting is provided with every CopySafe PDF license.
 
-For evaluation of DRM validation, create a demo account at the [CopySafe]( http://www.copysafe.net/drm/) website.
+For evaluation of DRM validation, create a demo account at the [CopySafe](http://www.copysafe.net/drm/) website.
 
 
 
