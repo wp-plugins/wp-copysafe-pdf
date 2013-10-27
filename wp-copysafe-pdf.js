@@ -1,6 +1,6 @@
 <!-- hide JavaScript from non-JavaScript browsers
 
-	//  WP Copysafe PDF - Version 3.0.1.3
+	//  WP Copysafe PDF - Version 3.0.5.1
 	//  Copyright (c) 1998-2013 ArtistScope. All Rights Reserved.
 	//  www.artistscope.com
 	//
@@ -19,13 +19,13 @@ var m_szDownloadNo = wpcsp_plugin_url + "download_no.php";
 var m_szDownload = wpcsp_plugin_url + "download.php?ref=" + m_szLocation;
 var m_szDownloadIE = m_szDownloadFX = m_szDownload ;
 //====================================================
-//   Current version == 3.0.1.3
+//   Current version == 3.0.5.1
 //====================================================
 
 var m_nV1=3;
 var m_nV2=0;
-var m_nV3=1;
-var m_nV4=3;
+var m_nV3=5;
+var m_nV4=1;
 
 //===========================
 //   DO NOT EDIT BELOW 

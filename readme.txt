@@ -66,8 +66,11 @@ You can upload new PDF class documents or select from a list of already uploaded
 
 == Changelog ==
 
-= 0.2 =
+= 0.3 =
 * Supported in Wordpress version 3.7
+* Support for Windows 8.1
+
+= 0.2 =
 * Added allowance for Firefox 20 and later
 
 = 0.1 =
