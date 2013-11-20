@@ -167,7 +167,7 @@ function insertCopysafePDF(szDocName)
         }       
     if ((m_szPlugin == "DLL"))
     {
-    	szObjectInsert = "type='application/x-artistscope-pdfreader5' codebase='" + wpcsp_plugin_url +"download.asp' ";
+    	szObjectInsert = "type='application/x-artistscope-pdfreader5' codebase='" + wpcsp_plugin_url +"download.php' ";
     	document.writeln("<ob" + "ject " + szObjectInsert + " width='" + m_bpWidth + "' height='" + m_bpHeight + "'>");
     }
     else if (m_szPlugin == "OCX")
