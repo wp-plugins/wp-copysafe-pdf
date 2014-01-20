@@ -66,6 +66,9 @@ You can upload new PDF class documents or select from a list of already uploaded
 
 == Changelog ==
 
+= 0.5 =
+* Added new languages for a new total of 27 langauages.
+
 = 0.4 =
 * Fixed IE-11 detection bug.
 
