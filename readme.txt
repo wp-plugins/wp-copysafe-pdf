@@ -66,6 +66,9 @@ You can upload new PDF class documents or select from a list of already uploaded
 
 == Changelog ==
 
+= 0.6 =
+* Changed the download link to point to an ArtistScope server.
+
 = 0.5 =
 * Added new languages for a new total of 27 langauages.
 

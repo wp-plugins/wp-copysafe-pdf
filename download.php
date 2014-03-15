@@ -113,7 +113,7 @@ echo '<!-- ArtisReader -->';
 
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                           
-                                        <div class="text" align="center"> Version 3.0.0.5 for 
+                                        <div class="text" align="center"> Version 3.0.5.6 for 
 														all popular web 
 														browsers.<br>
                                           <br>
@@ -125,8 +125,9 @@ echo '<!-- ArtisReader -->';
             <td nowrap align="center"><a href="http://images.artistscope.com/download/CopysafePDFreader.exe"><img src="images/copysafe48.png" border="0" width="48" height="48"></a>
             </td>
              <td nowrap align="left"><b>CopySafe PDF Reader &amp; Plugin</b></td>
-             <td nowrap align="center">5.95 Mb</td>
-            <td nowrap><a href="/wp-copysafe-pdf/installers/CopysafePDFreader.exe"><u>Download and install now</u></a></td>
+                                                    <td nowrap align="center">6.58 
+                                                      Mb</td>
+            <td nowrap><a href="http://images.artistscope.com/download/CopysafePDFreader.exe"><u>Download and install now</u></a></td>
           </tr>
         </table>
                         </td>
