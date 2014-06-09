@@ -3,7 +3,7 @@
 Contributors: ArtistScope
 Donate link: http://www.artistscope.com/copysafe_pdf_protection_wordpress_plugin.asp
 Tags: protect, secure, prevent, pdf
-Tested on: 3.7
+Tested on: 3.9
 Requires at least: 3.0.1 
 Stable tag: trunk 
 License: GPLv2 or later
@@ -65,6 +65,10 @@ You can upload new PDF class documents or select from a list of already uploaded
 4. The document file manager will list all uploaded document class files.
 
 == Changelog ==
+
+= 0.7 =
+* Fixed security flaw in upload that was permitted by WordPress.
+* Tested and aproved for WordPress 3.9.
 
 = 0.6 =
 * Changed the download link to point to an ArtistScope server.
