@@ -67,7 +67,7 @@ You can upload new PDF class documents or select from a list of already uploaded
 == Changelog ==
 
 = 0.7 =
-* Fixed security flaw in upload that was permitted by WordPress.
+* Fixed security flaw in upload function.
 * Tested and aproved for WordPress 3.9.
 
 = 0.6 =
