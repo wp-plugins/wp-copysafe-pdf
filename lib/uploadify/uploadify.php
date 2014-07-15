@@ -5,8 +5,6 @@ Copyright (c) 2012 Reactive Apps, Ronnie Garcia
 Released under the MIT License <http://www.opensource.org/licenses/mit-license.php> 
 */
 
-
-
 function sanitize_file_name( $filename ) {
 	$filename_raw = $filename;
 	$special_chars = array("?", "[", "]", "/", "\\", "=", "<", ">", ":", ";", ",", "'", "\"", "&", "$", "#", "*", "(", ")", "|", "~", "`", "!", "{", "}", chr(0));
@@ -51,7 +49,17 @@ function sanitize_file_name( $filename ) {
 $file_error = -1 ;
 $verifyToken = md5('unique_salt' . $_POST['token_timestamp']);
 
-if (!empty($_FILES) && $_POST['token'] == $verifyToken) {     
+$token_session = $_POST['token'];
+list($token,$session_id) = explode("-",$token_session);
+
+if( !empty($session_id) ) { session_id($session_id); }
+if ( !empty($_FILES) && $token == $verifyToken) 
+{
+	session_start();
+	$is_user_logged_in = $_SESSION['is_user_logged_in'];
+
+	if( $is_user_logged_in )
+	{
     // get uploaded file informations.
     $wpcsp_file     = $_FILES['wpcsp_file'];
     $file_name      = sanitize_file_name( $wpcsp_file['name'] );
@@ -71,7 +79,11 @@ if (!empty($_FILES) && $_POST['token'] == $verifyToken) {
 		}
 	} else {
 		$file_error = 7 ;//'Invalid file type.';
-		
+		}
+	}
+	else
+	{
+		$file_error = 8 ;//'User Not Logged In';
     }
 }
 echo $file_error ;

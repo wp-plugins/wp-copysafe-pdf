@@ -1,11 +1,16 @@
 <?php 
+
+	$timestamp = time();
+	$token = md5('unique_salt' . $timestamp);
+
 	$post_id = $_GET["post_id"] ;
 	$wpcsp_options = get_option("wpcsp_settings") ;
 	$max_size = ($wpcsp_options["settings"]["max_size"]) ? $wpcsp_options["settings"]["max_size"] : 100 ;
 	$upload_path = $wpcsp_options["settings"]["upload_path"] ;
-	$timestamp = time();
-	$token = md5('unique_salt' . $timestamp);
 	$_SESSION['token']=$token;
+
+	$session_id = session_id();
+	$token_session = "{$token}-{$session_id}";
 ?>
 
 <div class="wrap" id="wpcsp_div" title="SecureImage">
@@ -46,7 +51,7 @@
 			<input type="hidden" value="<?php echo WPCSP_UPLOAD_PATH;?>" id="upload-path" />
 			<input type="hidden" value="<?php echo $max_size;?>" id="upload-max-size" />		
 			<input type="hidden" value="<?php echo $timestamp;?>" id="token_timestamp" />
-			<input type="hidden" value="<?php echo $token;?>" id="token" />
+			<input type="hidden" value="<?php echo $token_session;?>" id="token" />
 			
 			<div class="clear"></div>
 		</div>
