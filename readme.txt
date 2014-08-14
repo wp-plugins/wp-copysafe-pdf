@@ -67,7 +67,7 @@ You can upload new PDF class documents or select from a list of already uploaded
 == Changelog ==
 
 = 0.9 =
-* Tested and verified on WorPress version 3.9.2
+* Tested and verified on WordPress version 3.9.2
 * Added alternative user check in case session logging not supported by webhost.
 * Added settings option to allow uploads by admin only.
 * Upload will progress only on same host IP.
