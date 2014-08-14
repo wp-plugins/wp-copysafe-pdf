@@ -4,7 +4,7 @@
   Plugin URI: http://www.artistscope.com/copysafe_pdf_protection_wordpress_plugin.asp
   Description: This Wordpress plugin enables sites using CopySafe PDF to easily add protected PDF for display in all popular web browsers.
   Author: ArtistScope
-  Version: 0.8
+  Version: 0.9
   Author URI: http://www.artistscope.com/
 
   Copyright 2014 ArtistScope Pty Limited
@@ -97,6 +97,7 @@ function wpcsp_admin_page_settings() {
 			$upload_path .= "/";
 
 		$wpcsw_options['settings'] = array(
+		    'admin_only' => $admin_only,
 		    'upload_path' => $upload_path,
 		    'mode' => $mode,
 		    'max_size' => (int) $max_size,
@@ -165,9 +166,15 @@ function wpcsp_admin_page_settings() {
 		<h2>Default Settings</h2>
 		<form action="" method="post">
 			<input type="hidden" value="<?php echo $security; ?>" name="wpcsp_wpnonce" id="wpcsp_wpnonce" />
-			<table cellpadding='0' cellspacing='0' border='0' id='wpcsp_page_setting'>
+			<table cellpadding='1' cellspacing='0' border='0' id='wpcsp_page_setting'>
 				<p><strong>Default settings applied to all protected PDF pages:</strong></p>
 				<tbody> 
+					<tr> 
+						<td align='left' width='50'>&nbsp;</td>
+						<td align='left' width='30'><img src='<?php echo WPCSP_PLUGIN_URL; ?>images/help-24-30.png' border='0' alt='Allow admin only for new uploads.'></td>
+						<td align="left">Allow Admin Only:</td>
+						<td align="left"><input name="admin_only" type="checkbox" value="checked" <?php echo $admin_only; ?>></td>
+					</tr>
 					<tr> 
 						<td align='left' width='50'>&nbsp;</td>
 						<td align='left' width='30'><img src='<?php echo WPCSP_PLUGIN_URL; ?>images/help-24-30.png' border='0' alt='Path to the upload folder for PDF.'>
@@ -522,6 +529,7 @@ function wpcsp_activate() {
 
 		// set default options
 		$wpcsp_options['settings'] = array(
+		    'admin_only' => "checked",
 		    'upload_path' => $upload_dir,
 		    'mode' => "demo",
 		    'max_size' => 100,

@@ -1,7 +1,7 @@
 <!-- hide JavaScript from non-JavaScript browsers
 
 	//  WP Copysafe PDF - Version 3.0.5.1
-	//  Copyright (c) 1998-2013 ArtistScope. All Rights Reserved.
+	//  Copyright (c) 1998-2014 ArtistScope. All Rights Reserved.
 	//  www.artistscope.com
 	//
 	// The Copysafe PDF Reader plugin is supported across all Windows since XP

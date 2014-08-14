@@ -66,6 +66,16 @@ You can upload new PDF class documents or select from a list of already uploaded
 
 == Changelog ==
 
+= 0.9 =
+* Tested and verified on WorPress version 3.9.2
+* Added alternative user check in case session logging not supported by webhost.
+* Added settings option to allow uploads by admin only.
+* Upload will progress only on same host IP.
+* Referrer user agent must be Shockwave Flash
+* Referrer url must match with the same script name.
+* Save settings page options altered for show in smaller screens.
+* No need to click "Insert File to editor" button after Save button clicked.
+
 = 0.8 =
 * Modified logged-in user requirement for upload function.
 

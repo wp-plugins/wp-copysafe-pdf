@@ -59,5 +59,6 @@ If (! Class_Exists ( 'WPCSPPOPUP' )) {
 		}
 	 }	 
 	 $popup = new WPCSPPOPUP ();	 
+	 
 }
 ?>

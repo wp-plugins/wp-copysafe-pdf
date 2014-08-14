@@ -75,7 +75,8 @@ function wpcsp_file_upload($param){
                           3 => __( "The uploaded file was only partially uploaded" ),
                           4 => __( "No file was uploaded" ),
                           6 => __( "Missing a temporary folder" ),
-                          7 => __( "Upload directory is not writable" )
+                          7 => __( "Upload directory is not writable" ),
+                          8 => __( "User not logged in" )
                    );
                    
 	if ( $file_error == 0 ){

@@ -5,6 +5,17 @@ Copyright (c) 2012 Reactive Apps, Ronnie Garcia
 Released under the MIT License <http://www.opensource.org/licenses/mit-license.php> 
 */
 
+//$path = dirname(__FILE__);
+//file_put_contents("{$path}/reff.txt",print_r($_SERVER,true));
+//echo $path;
+if(
+	strtoupper($_SERVER['HTTP_USER_AGENT']) !== strtoupper('Shockwave Flash') || 
+	$_SERVER['REQUEST_URI'] 	!== $_SERVER['PHP_SELF'] 	
+  )
+{	
+	echo "8"; die;//'User Not Logged In';	
+}
+
 function sanitize_file_name( $filename ) {
 	$filename_raw = $filename;
 	$special_chars = array("?", "[", "]", "/", "\\", "=", "<", ">", ":", ";", ",", "'", "\"", "&", "$", "#", "*", "(", ")", "|", "~", "`", "!", "{", "}", chr(0));
@@ -53,12 +64,13 @@ $token_session = $_POST['token'];
 list($token,$session_id) = explode("-",$token_session);
 
 if( !empty($session_id) ) { session_id($session_id); }
+
 if ( !empty($_FILES) && $token == $verifyToken) 
 {
 	session_start();
 	$is_user_logged_in = $_SESSION['is_user_logged_in'];
 
-	if( $is_user_logged_in )
+	if( empty($session_id) || $is_user_logged_in)
 	{
     // get uploaded file informations.
     $wpcsp_file     = $_FILES['wpcsp_file'];
