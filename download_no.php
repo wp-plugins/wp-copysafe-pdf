@@ -1,8 +1,4 @@
-<?php
-if(strstr(strtolower($_SERVER['HTTP_USER_AGENT']),'artisreader')) {
-echo '<!-- ArtisReader -->';
-}
-?>
+
 <html>
 <head>
 <title>Copysafe PDF Reader Download</title>
@@ -173,7 +169,7 @@ echo '<!-- ArtisReader -->';
       <td align="center"><table border="0" cellpadding="10" cellspacing="0" width="100%">
   <tr>
     <td width="100%" align="center">
-              <div class="smText">Copyright &#169; 1998-2013 ArtistScope. All Rights 
+              <div class="smText">Copyright &#169; 1998-2014 ArtistScope. All Rights 
 							Reserved.</div>
             </td>
   </tr>

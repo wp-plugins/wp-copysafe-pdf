@@ -190,9 +190,6 @@ function wpcsp_setting_save($param){
 	// escape user inputs
     $data = array_map( "esc_attr", $data );
     extract( $data );
-	
-    
-	
     $wpcsp_settings = get_option( 'wpcsp_settings' ); 
 	if(!is_array($wpcsp_settings))$wpcsp_settings = array() ; 
 	
@@ -219,6 +216,7 @@ function wpcsp_setting_save($param){
 
 function _get_wpcsp_uploadfile_list(){
 	$listdata = array() ;
+	chmod(WPCSP_UPLOAD_PATH, 0775);
 	$file_list = scandir( WPCSP_UPLOAD_PATH );
 	
 	foreach ($file_list as $file) {

@@ -66,6 +66,9 @@ You can upload new PDF class documents or select from a list of already uploaded
 
 == Changelog ==
 
+= 1.1 =
+* Bugfix for user session checking
+
 = 1.0 =
 * Tested and verified on WordPress version 4.0
 

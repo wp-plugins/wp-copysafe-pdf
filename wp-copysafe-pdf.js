@@ -1,6 +1,6 @@
 <!-- hide JavaScript from non-JavaScript browsers
 
-	//  WP Copysafe PDF - Version 3.0.5.1
+	//  WordPress Copysafe PDF
 	//  Copyright (c) 1998-2014 ArtistScope. All Rights Reserved.
 	//  www.artistscope.com
 	//

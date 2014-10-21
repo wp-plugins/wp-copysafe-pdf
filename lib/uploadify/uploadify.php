@@ -8,15 +8,13 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 //$path = dirname(__FILE__);
 //file_put_contents("{$path}/reff.txt",print_r($_SERVER,true));
 //echo $path;
-if(
-	strtoupper($_SERVER['HTTP_USER_AGENT']) !== strtoupper('Shockwave Flash') || 
-	$_SERVER['REQUEST_URI'] 	!== $_SERVER['PHP_SELF'] 	
-  )
-{	
-	echo "8"; die;//'User Not Logged In';	
+require_once('../../../../../wp-load.php');
+if(! is_user_logged_in() && is_admin()) {	
+	echo "8";
+	die;//'User Not Logged In';	
 }
-
-function sanitize_file_name( $filename ) {
+//print_r($_SERVER['HTTP_USER_AGENT']);
+function wpcs_pdf_sanitize_file_name( $filename ) {
 	$filename_raw = $filename;
 	$special_chars = array("?", "[", "]", "/", "\\", "=", "<", ">", ":", ";", ",", "'", "\"", "&", "$", "#", "*", "(", ")", "|", "~", "`", "!", "{", "}", chr(0));
 	$filename = str_replace($special_chars, '', $filename);
@@ -27,7 +25,8 @@ function sanitize_file_name( $filename ) {
 	$parts = explode('.', $filename);
 
 	// Return if only one extension
-	if ( count($parts) <= 2 )return $filename ;
+	if ( count($parts) <= 2 )
+	  return $filename ;
 
 	// Process multiple extensions
 	$filename = array_shift($parts);
@@ -63,18 +62,18 @@ $verifyToken = md5('unique_salt' . $_POST['token_timestamp']);
 $token_session = $_POST['token'];
 list($token,$session_id) = explode("-",$token_session);
 
-if( !empty($session_id) ) { session_id($session_id); }
+if(! empty($session_id) ) {
+  session_id($session_id);
+}
 
-if ( !empty($_FILES) && $token == $verifyToken) 
-{
+if (! empty($_FILES) && $token == $verifyToken) {
 	session_start();
 	$is_user_logged_in = $_SESSION['is_user_logged_in'];
 
-	if( empty($session_id) || $is_user_logged_in)
-	{
+	if( ! empty($session_id) )	{
     // get uploaded file informations.
     $wpcsp_file     = $_FILES['wpcsp_file'];
-    $file_name      = sanitize_file_name( $wpcsp_file['name'] );
+    $file_name      = wpcs_pdf_sanitize_file_name( $wpcsp_file['name'] );
     $file_type      = $wpcsp_file['type'];
     $file_tmp_name  = $wpcsp_file['tmp_name'];
     $file_error     = $wpcsp_file['error'];
@@ -92,9 +91,7 @@ if ( !empty($_FILES) && $token == $verifyToken)
 	} else {
 		$file_error = 7 ;//'Invalid file type.';
 		}
-	}
-	else
-	{
+	}	else {
 		$file_error = 8 ;//'User Not Logged In';
     }
 }
