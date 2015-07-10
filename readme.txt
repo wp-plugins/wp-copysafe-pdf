@@ -66,6 +66,11 @@ You can upload new PDF class documents or select from a list of already uploaded
 
 == Changelog ==
 
+= 1.4 =
+* Added compatibilty for ASPS web browser.
+* Added ASPS as a browser requirement in settings.
+* Updated download pages to cater for lack of IE and Chrome plugin support.
+
 = 1.3 =
 * Tested for compatibility with WP 4.2.
 

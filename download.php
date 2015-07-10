@@ -19,17 +19,13 @@
     <tr>
       <td dir="ltr" width="30">
       <img alt="" border="0" src="images/corner_top_left_clear.gif" width="30"></td>
-      <td dir="ltr" background="images/top_bg.gif">
-      <table class="text" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" id="AutoNumber4">
-        <tr>
-          <td>
-			<img alt="" border="0" src="images/artistscope-logo48.png" width="48" height="48"></td>
-          <td><font face="Arial, Helvetica, sans-serif" size="2">
-      <a href="http://www.artistscope.com">
-      <img alt="" border="0" src="images/header_logo_blue.jpg" width="200" height="40"></a></font></td>
-        </tr>
-      </table>
-      </td>
+            <td dir="ltr" background="images/top_bg.gif"> 
+              <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111">
+                <tr> 
+                  <td><a href="http://www.artistscope.com"><img alt="" src="images/artistscope_toplogo.jpg" border="0" width="280" height="48"></a></td>
+                </tr>
+              </table>
+            </td>
       <td align="center" dir="ltr" background="images/top_bg.gif">
       <table class="text" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber1">
         <tr>
@@ -130,22 +126,20 @@
                     </table>
                   </div>
                   <div align="center">
-     <table class="text" border="0" cellpadding="10" cellspacing="0" width="500" >
-       <tr> 
-      <td nowrap align="center"><br>
-        If you have already installed 
-		this software and keep returning here you may need to restart 
-		<br>your browser to update its Add-ons list. Check that CopySafe PDF Reader is allowed to run.<br>
+                                          <table class="text" border="0" cellpadding="10" cellspacing="0" width="550" >
+                                            <tr align="left"> 
+                                              <td><br>
+                                                If you have already installed 
+                                                this software and keep returning 
+                                                here you may need to restart your 
+                                                browser to update its Add-ons 
+                                                list. <br>
                                                 <br>
-<script language="JavaScript" type="text/javascript">
-	if (m_szReferrer != undefined) {
-	document.write("<a href='" + m_szReferrer + "'");
-	document.write("<u>Return to the protected document</u>");
-	document.write("</a>");
-	}
-</script><br>
-<br>
-Note: You must click OK to any prompts about allowing this plugin to run.</td>
+                                                Otherwise your browser version 
+                                                may no longer be supporting significant 
+                                                plugins in which case you should 
+                                                install the <a href="download_asps.php"><u>ASPS 
+                                                Web Browser</u></a>.</td>
     </tr>
     </table>
                                           </div>
@@ -201,7 +195,10 @@ Note: You must click OK to any prompts about allowing this plugin to run.</td>
     <tr>
       <td align="center"><table border="0" cellpadding="10" cellspacing="0" width="100%">
   <tr>
-    <td width="100%" align="center"><div class="smText">Copyright &#169; 1998-2014 ArtistScope. All Rights Reserved.</div></td>
+    <td width="100%" align="center">
+              <div class="smText">Copyright &#169; 1998-2015 ArtistScope. All 
+                Rights Reserved.</div>
+            </td>
   </tr>
 </table></td>
     </tr>

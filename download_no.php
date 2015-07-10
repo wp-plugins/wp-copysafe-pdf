@@ -19,11 +19,8 @@
       <td dir="ltr" background="images/top_bg.gif">
       <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111">
         <tr>
-          <td>
-			<img alt="" border="0" src="images/artistscope-logo48.png" width="48" height="48"></td>
-          <td><font face="Arial, Helvetica, sans-serif" size="2">
-      <a href="http://www.artistscope.com">
-      <img alt="" border="0" src="images/header_logo_blue.jpg" width="200" height="40"></a></font></td>
+                  <td><a href="http://www.artistscope.com"><img alt="" src="images/artistscope_toplogo.jpg" border="0" width="280" height="48"></a></td>        
+
         </tr>
       </table>
       </td>
@@ -107,8 +104,8 @@
                 A webmaster can nominate to allow or disallow access according to 
 				OS, platform, web browser and version. <br><br>
                     <b>Windows</b><br><br>
-                                      Browsers supported are IE6+, Firefox 
-				5+, Netscape 9+, Chrome, Opera 9+ and Safari 5+.<br>
+                                      Browsers supported are ASPS, IE6+, Firefox 
+                                      5+, Chrome, Opera 9+ and Safari 5+.<br>
                                       <br>
                     <b>Mac OS </b><br><br>
                     Mac web browsers are not supported.<br><br>
@@ -169,8 +166,8 @@
       <td align="center"><table border="0" cellpadding="10" cellspacing="0" width="100%">
   <tr>
     <td width="100%" align="center">
-              <div class="smText">Copyright &#169; 1998-2014 ArtistScope. All Rights 
-							Reserved.</div>
+              <div class="smText">Copyright &#169; 1998-2015 ArtistScope. All 
+                Rights Reserved.</div>
             </td>
   </tr>
 </table></td>

@@ -4,10 +4,10 @@
   Plugin URI: http://www.artistscope.com/copysafe_pdf_protection_wordpress_plugin.asp
   Description: This Wordpress plugin enables sites using CopySafe PDF to easily add protected PDF for display in all popular web browsers.
   Author: ArtistScope
-  Version: 1.3
+  Version: 1.4
   Author URI: http://www.artistscope.com/
 
-  Copyright 2014 ArtistScope Pty Limited
+  Copyright 2015 ArtistScope Pty Limited
 
 
   This program is free software: you can redistribute it and/or modify
@@ -103,10 +103,10 @@ function wpcsp_admin_page_settings() {
 		    'max_size' => (int) $max_size,
 		    'language' => $language,
 		    'background' => $background,
+		    'asps' => $asps,
 		    'ie' => $ie,
 		    'ff' => $ff,
 		    'ch' => $ch,
-		    'nav' => $nav,
 		    'op' => $op,
 		    'sa' => $sa
 		);
@@ -213,6 +213,12 @@ function wpcsp_admin_page_settings() {
 					</tr>
 					<tr> 
 						<td align='left' width='50'>&nbsp;</td>
+						<td align='left' width='30'><img src='<?php echo WPCSP_PLUGIN_URL; ?>images/help-24-30.png' border='0' alt='Allow visitors using the ASPS web browser to access this page.'></td>
+						<td align="left">Allow ASPS:</td>
+						<td align="left"><input name="asps" type="checkbox" value="checked" <?php echo $asps; ?>></td>
+					</tr>
+					<tr> 
+						<td align='left' width='50'>&nbsp;</td>
 						<td align='left' width='30'><img src='<?php echo WPCSP_PLUGIN_URL; ?>images/help-24-30.png' border='0' alt='Allow visitors using the Internet Explorer web browser to access this page.'></td>
 						<td align="left">Allow IE:</td>
 						<td align="left"><input name="ie" type="checkbox" value="checked" <?php echo $ie; ?>></td>
@@ -228,12 +234,6 @@ function wpcsp_admin_page_settings() {
 						<td align='left' width='30'><img src='<?php echo WPCSP_PLUGIN_URL; ?>images/help-24-30.png' border='0' alt='Allow visitors using the Chrome web browser to access this page.'></td>
 						<td align="left">Allow Chrome:</td>
 						<td align="left"><input name="ch" type="checkbox" value="checked" <?php echo $ch; ?>></td>
-					</tr>
-					<tr> 
-						<td align='left' width='50'>&nbsp;</td>
-						<td align='left' width='30'><img src='<?php echo WPCSP_PLUGIN_URL; ?>images/help-24-30.png' border='0' alt='Allow visitors using the Netscape Navigator web browser to access this page.'></td>
-						<td align="left">Allow Navigator:&nbsp;&nbsp;</td>
-						<td align="left"><input name="nav" type="checkbox" value="checked" <?php echo $nav; ?>></td>
 					</tr>
 					<tr> 
 						<td align='left' width='50'>&nbsp;</td>
@@ -291,10 +291,10 @@ function wpcsp_shortcode($atts) {
 
 	extract($settings);
 
+	$asps = ($asps) ? '1' : '0';
 	$msie = ($ie) ? '1' : '0';
 	$firefox = ($ff) ? '1' : '0';
 	$chrome = ($ch) ? '1' : '0';
-	$navigator = ($nav) ? '1' : '0';
 	$opera = ($op) ? '1' : '0';
 	$safari = ($sa) ? '1' : '0';
 
@@ -327,9 +327,9 @@ function wpcsp_shortcode($atts) {
 		var m_bpWidth = "$bgwidth";				// width of PDF display in pixels
 		var m_bpHeight = "$bgheight";			// height of PDF display in pixels
 
+		var m_bpASPS = "$asps";
 		var m_bpChrome = "$chrome";	
 		var m_bpFx = "$firefox";			// all firefox browsers from version 5 and later
-		var m_bpNav = "$navigator";
 		var m_bpOpera = "$opera";
 		var m_bpSafari = "$safari";
 		var m_bpMSIE = "$msie";
@@ -535,10 +535,10 @@ function wpcsp_activate() {
 		    'max_size' => 100,
 		    'language' => "",
 		    'background' => "EEEEEE",
+		    'asps' => "checked",
 		    'ie' => "checked",
 		    'ff' => "checked",
 		    'ch' => "checked",
-		    'nav' => "checked",
 		    'op' => "checked",
 		    'sa' => "checked"
 		);
