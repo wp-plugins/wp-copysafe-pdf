@@ -126,7 +126,7 @@ function getParameterByName(name) {
       <table border="0" cellpadding="10" cellspacing="0" style="BORDER: 1px solid #B1B1B1;; border-collapse:collapse" width="100%">
           <tr>
                               <td nowrap class="lgText" align="left"><b>CopySafe 
-                                PDF Reader &amp; Plugin Download</b></td>
+                                PDF Reader Download</b></td>
                               <td align="center" class="textGray">Secure solutions for media, documents 
                                 and web pages.</td>
           </tr>
