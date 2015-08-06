@@ -66,6 +66,9 @@ You can upload new PDF class documents or select from a list of already uploaded
 
 == Changelog ==
 
+= 1.5 =
+* Detection update for Windows 10.
+
 = 1.4 =
 * Added compatibilty for ASPS web browser.
 * Added ASPS as a browser requirement in settings.
